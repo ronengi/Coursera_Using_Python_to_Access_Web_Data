@@ -6,8 +6,9 @@ import re
 hand = open('../../file1.text')
 for line in hand:
     line = line.rstrip()
-    if re.search('^xdg', line):
+    if re.search('^xdg', line):     # <==> if line.startswith('xdg'):
         print(line)
+
 
 print()
 
